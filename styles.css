@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+*,
+html {
+    padding:0px;
+    box-sizing:border-box;
+    font-family: 'Inconsolata', monospace;
+}
+
+body {
+    min-height:100vh;
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+}
+
+#libraryCard {
+    display:flex;
+    height:250px;
+    width:250px;
+    flex-direction:column;
+    justify-content: space-between;
+    align-content:space-between;
+    background-color: rgb(189, 189, 255);
+}
+#libraryCard > div > button {
+    color:red;
+}
+
+.hide {
+    display: none;
+    position:fixed;
+    z-index: 1;
+    width:50%%;
+    height:50%%;
+    overflow:auto;
+    background-color:rgba(0,0,0,0.4);
+}
+
+.show {
+    display:flex;
+    position:fixed;
+    background-color: gainsboro;
+    margin: 15% auto;
+    padding:15px;
+    border:1px solid #444;
+    width:40%;
+}
+
+.close {
+    color: #aaa;
+    float:right;
+    font-size:28px;
+    font-weight:bolder;
+}
