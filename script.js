@@ -24,8 +24,6 @@ function Book(title, author, pages, read) {
 //   myLibrary.push(this)
 //}
 
-let submitBtn = document.querySelector("#submit");
-submitBtn.addEventListener('click', addBookToLibrary)
 
 function addBookToLibrary() {
     let bookInput = document.getElementById("title").value
@@ -37,8 +35,8 @@ function addBookToLibrary() {
     if (bookInput !== '' && authorInput !== '' && pagesInput !== '' ) {
         myLibrary.push(new Book (bookInput, authorInput, pagesInput, readInput));
         displayLibrary();
-        clearForm();
         hideModal();
+        clearForm();
     } else {
         alert('Please fill out the form!')
     }

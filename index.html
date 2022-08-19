@@ -20,7 +20,7 @@
         <input type="text" id="author" name="author" placeholder="Book author">
 
         <label for="pages">Pages</label>
-        <input type="text" id="pages" name="pages" placeholder="Page#">
+        <input type="number" id="pages" name="pages" placeholder="Page#">
 
         <label for="read">Read?</label>
         <input type="checkbox" id="read" name="read" value="">
@@ -30,10 +30,17 @@
 </div>
     <button id="add-book" onclick="showModal()">Add</button>
     <h2>Library:</h2>
+<div class="library-contain">
     <div class="library">
+        <div>Title</div>
+        <div>Author</div>
+        <div>Pages</div>
+    </div>
         <div id="libraryCard">
         </div>
-    </div>
+</div>
+
+</div>
 </div>
 </body>
 </html>

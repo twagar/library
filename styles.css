@@ -18,30 +18,88 @@ body {
     flex-direction: column;
 }
 
-form {
+#book-form {
     display:flex;
     flex-direction: column;
+    color:rgb(111, 111, 255);
+    font-weight:700;
+}
+
+#submit {
+    background-color: rgb(227, 227, 255);
+    border:1px solid black;
+    border-radius: 15px;;
+    box-shadow:2px 2px black;
+    float:right;
+    width:90px;
+}
+
+#add-book {
+    border-radius:12px;
+    width:160px;
+    background-color: rgb(227, 227, 255);
+    border:1px solid black;
+    box-shadow:2px 2px black;
+    font-size:24px;
+    font-weight:600;
+}
+
+.library {
+    display:flex;
+    flex-direction: column;
+    width:20%;
+}
+
+.library-contain {
+    display:flex;
+    flex-direction: row;
+    width:60%;
+    background-color: rgb(227, 227, 255);
 }
 
 #libraryCard {
     display:flex;
-    height:250px;
-    width:250px;
+    height:100%;
+    width:100%;
     flex-direction:column;
     justify-content: space-between;
     align-content:space-between;
     background-color: rgb(189, 189, 255);
+    border:1px solid rgb(227, 227, 255)
 }
-#libraryCard > div > button {
-    color:red;
+.remove-btn {
+    background-color: rgb(227, 227, 255);
+    border:1px solid black;
+    border-radius: 15px;;
+    box-shadow:2px 2px black;
+    float:right;
+    width:90px;
+}
+
+.read-btn {
+    background-color: rgb(227, 227, 255);
+    border:1px solid black;
+    border-radius: 15px;;
+    box-shadow:2px 2px black;
+    float:right;
+    width:90px;
+}
+
+.not-read-btn {
+    background-color: rgb(227, 227, 255);
+    border:1px solid black;
+    border-radius: 15px;;
+    box-shadow:2px 2px black;
+    float:right;
+    width:90px;
 }
 
 .hide {
     display: none;
     position:fixed;
     z-index: 1;
-    width:50%%;
-    height:50%%;
+    width:50%;
+    height:80%%;
     overflow:auto;
     background-color:rgba(0,0,0,0.4);
 }
@@ -49,16 +107,38 @@ form {
 .show {
     display:flex;
     position:fixed;
-    background-color: gainsboro;
-    margin: 15% auto;
-    padding:15px;
+    background-color: rgba(174, 174, 255, 0.7);
+    margin-top:500px;
+    padding:12px;
     border:1px solid #444;
-    width:40%;
+    border-radius:15px;
+    width:23%;
+    box-shadow:4px 4px black;
+}
+
+#book-form > input {
+    background-color:rgb(236, 236, 255);
+    border-radius:5px;
+    border-style:dotted;
+    font-size:16px;
 }
 
 .close {
-    color: #aaa;
+    color: rgb(0, 0, 0);
     float:right;
     font-size:28px;
     font-weight:bolder;
+    display:flex;
+    justify-content: end;
+}
+
+.close:hover {
+    font-style:oblique;
+}
+
+input[type=checkbox] {
+    display:flex;
+    width:16px;
+    margin:6px;
+    border-color: rgb(111, 111, 255);
 }
